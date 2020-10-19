@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>El primer script</title>
+ 
+    <script type="text/javascript">
+        "use strict";
+     var person = prompt("Introduce un numeroxd", "");
+     var num= parseInt(person);
+
+     while(Number.isInteger(num)==false || (num<0)){
+     	person = prompt("introducelo bien","" );
+        num= parseInt(person);
+     }
+     var texto;
+     function generarpiramide(base){
+       for (i=1; i<=base; i++){
+            for (j=base; j>=i; j--){
+              document.write("*");
+            }
+        document.write("<br />");
+         }
+    }
+     generarpiramide(num);
+
+
+
+    </script>
+</head>
+ 
+<body>
+
+</body>
+</html>
